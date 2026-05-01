@@ -1,0 +1,3 @@
+Baseline_objectives:
+- Robot must reach the given goal position
+- Robot must not collide with any obstacles
