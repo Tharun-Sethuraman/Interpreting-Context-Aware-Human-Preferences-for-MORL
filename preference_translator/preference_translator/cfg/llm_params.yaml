@@ -1,0 +1,50 @@
+# api: openai
+# model: gpt-4o #[str] The Multi-Modal model to use from OpenAI.
+# # temperature: #[float] The temperature to use for sampling (default :  DEFAULT_TEMPERATURE=0.1)
+# max_tokens: 300 #[int] The maximum numbers of tokens to generate, ignoring the number of tokens in the prompt (default : 300)
+# max_retries: 2 #[int] Maximum number of retries (default=3)
+# timeout: 120 #[float] The timeout, in seconds, for API requests. (default=60.0s)
+# api_key:  #[str] The OpenAI API key. (can be set as env parameter)
+# # api_base: #[str] The base URL for OpenAI API.
+# # api_version: #[str] The API version for OpenAI API.
+
+#<------ Mistral AI ------>#
+
+api: mistral # openai, mistral
+model: mistral-large-2411 #[str] The Multi-Modal model to use from OpenAI.
+# temperature: #[float] The temperature to use for sampling (default :  DEFAULT_TEMPERATURE=0.1)
+max_tokens: 1000 #[int] The maximum numbers of tokens to generate, ignoring the number of tokens in the prompt (default : 300)
+context_window: 3900 #[int] The maximum number of context tokens for the model. (default :  DEFAULT_CONTEXT_WINDOW=3900)
+# image_detail: low #[str] The level of details for image in API calls. Can be low, high, or auto.
+max_retries: 2 #[int] Maximum number of retries (default=3)
+timeout: 120 #[float] The timeout, in seconds, for API requests. (default=60.0s)
+api_key:  #[str] The API key. (can be set as env parameter)
+# api_base: #[str] The base URL for OpenAI API.
+# api_version: #[str] The API version for OpenAI API.
+
+#<------ Gemini AI ------>#
+
+# api: gemini # openai, mistral, gemini
+# model: models/gemini-1.5-flash #[str] The Multi-Modal model to use from Gemini.
+# # temperature: #[float] The temperature to use for sampling (default :  DEFAULT_TEMPERATURE=0.1)
+# max_tokens: 1000 #[int] The maximum numbers of tokens to generate, ignoring the number of tokens in the prompt (default : 300)
+# context_window: 3900 #[int] The maximum number of context tokens for the model. (default :  DEFAULT_CONTEXT_WINDOW=3900)
+# max_retries: 2 #[int] Maximum number of retries (default=3)
+# timeout: 120 #[float] The timeout, in seconds, for API requests. (default=60.0s)
+# api_key: #[str] The API key. (can be set as env parameter)
+# # api_base: #[str] The base URL for Google API.
+# # api_version: #[str] The API version for Google API.
+
+
+#<------ Ollama ------>#
+
+# api: ollama # openai, mistral, gemini
+# model: gemma3:1b #[str] The Multi-Modal model to use from Gemini.
+# # temperature: #[float] The temperature to use for sampling (default :  DEFAULT_TEMPERATURE=0.1)
+# max_tokens: 1000 #[int] The maximum numbers of tokens to generate, ignoring the number of tokens in the prompt (default : 300)
+# context_window: 3900 #[int] The maximum number of context tokens for the model. (default :  DEFAULT_CONTEXT_WINDOW=3900)
+# max_retries: 2 #[int] Maximum number of retries (default=3)
+# timeout: 120 #[float] The timeout, in seconds, for API requests. (default=60.0s)
+# api_key: "" #[str] The API key. (can be set as env parameter)
+# # api_base: #[str] The base URL for Google API.
+# # api_version: #[str] The API version for Google API.
